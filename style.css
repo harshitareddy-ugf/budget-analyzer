@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* DASHBOARD */
+.dashboard {
+    padding: 50px 10%;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 10px;
+    flex: 1;
+}
+
+.form button {
+    padding: 10px 20px;
+    background: #2d89ef;
+    color: white;
+    border: none;
+}
+
+#list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: white;
+    margin-bottom: 5px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px 10%;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .summary {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+}
