@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget Analyzer India</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Budget Analyzer India</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Empowering Your Financial Decisions</h1>
+        <p>Track expenses, analyze spending, and grow your savings smarter.</p>
+        <a href="#dashboard" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="dashboard" id="dashboard">
+
+    <h2>Finance Dashboard</h2>
+
+    <div class="summary">
+        <div class="card">
+            <h3>Balance</h3>
+            <p id="balance">₹0</p>
+        </div>
+        <div class="card">
+            <h3>Income</h3>
+            <p id="income">₹0</p>
+        </div>
+        <div class="card">
+            <h3>Expense</h3>
+            <p id="expense">₹0</p>
+        </div>
+    </div>
+
+    <div class="form">
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount (+income / -expense)">
+        <button onclick="addTransaction()">Add</button>
+    </div>
+
+    <ul id="list"></ul>
+
+    <canvas id="chart"></canvas>
+
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@budgetindia.com</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
